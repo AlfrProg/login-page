@@ -1,0 +1,88 @@
+<!-- Defining the document type and language -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Setting the character set and viewport for responsiveness -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Linking to an external stylesheet for styling -->
+    <link rel="stylesheet" href="./Pagina de login.css">
+
+    <!-- Preconnecting to external font resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Linking to various Google Fonts for the page -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Arvo&family=Dhurjati&family=Orbitron&family=Poppins:wght@400;500;600&family=Roboto:ital,wght@1,900&family=Spectral:wght@300&display=swap"
+        rel="stylesheet">
+
+    <!-- Including Font Awesome icons library -->
+    <script src="https://kit.fontawesome.com/35a3b74574.js" crossorigin="anonymous"></script>
+
+    <!-- Setting the title of the page -->
+    <title>login</title>
+</head>
+
+<body>
+    <!-- Header section with navigation links and social icons -->
+    <header>
+        <nav>
+            <a href="#">Início</a>
+            <a href="#">Sobre-nos</a>
+        </nav>
+        <div>
+            <a href="#" target="_blank">
+                <!-- LinkedIn icon -->
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/AlfrProg" target="_blank">
+                <!-- GitHub icon -->
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Main content section with images and a form -->
+    <main>
+        <!-- Images for the main content -->
+        <img src="./cartaz.png" alt="" class="imagem">
+        <img src="./peaple.png" alt="" class="peaple">
+
+        <!-- Form for email and password input -->
+        <form action="">
+            <a>INSIRA O SEU E-MAIL</a>
+            <!-- Email input field -->
+            <input type="email" placeholder="Digite o seu email" required>
+            <a>DIGITE SUA SENHA</a>
+            <!-- Password input field -->
+            <input type="password" placeholder="Digite a sua Password" required>
+            <!-- Submit button for the form -->
+            <input type="submit" placeholder="ENVIAR" class="button">
+        </form>
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+        <!-- Footer content (currently empty) -->
+    </footer>
+
+    <!-- JavaScript script for form validation -->
+    <script>
+        function validateForm() {
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+
+            // Checking if email and password are not empty
+            if (email === "" || password === "") {
+                alert("Por favor, preencha todos os campos.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+
+</html>
